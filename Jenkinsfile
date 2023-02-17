@@ -11,7 +11,7 @@ pipeline {
     
     stage('Test') {
       steps {
-        './PES1UG20CS545'
+        sh './PES1UG20CS545'
       }
     }
     
@@ -23,7 +23,7 @@ pipeline {
   }
   post {
     failure {
-      echo 'Pipeline failed'
+      eho 'Pipeline failed'
     }
   }
 }
